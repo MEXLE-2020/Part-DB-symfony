@@ -36,7 +36,7 @@ RUN php bin/console --env=prod ckeditor:install --clear=skip
 
 # Use demo env to output logs to stdout
 ENV APP_ENV=prod
-ENV DATABASE_URL="localhost"
+ENV DATABASE_URL="mysql://localhost:3306/foo?charset=UTF8"
 
 USER root
 
