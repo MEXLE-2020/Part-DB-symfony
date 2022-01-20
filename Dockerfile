@@ -35,8 +35,8 @@ RUN yarn install && yarn build && yarn cache clean
 RUN php bin/console --env=prod ckeditor:install --clear=skip
 
 # Use demo env to output logs to stdout
-ENV APP_ENV=demo
-ENV DATABASE_URL="sqlite:///%kernel.project_dir%/uploads/app.db"
+ENV APP_ENV=prod
+ENV DATABASE_URL="localhost"
 
 USER root
 
